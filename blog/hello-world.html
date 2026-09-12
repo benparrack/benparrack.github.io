@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello, world — Ben Parrack</title>
+  <meta name="description" content="First post on Ben Parrack's blog.">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/">Ben<span class="accent">.</span>Parrack</a>
+      <nav class="nav" id="nav">
+        <a href="/">Home</a>
+        <a href="/projects/">Projects</a>
+        <a href="/resume/">Resume</a>
+        <a href="/blog/" class="is-active">Blog</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section reveal" style="padding-top: 100px;">
+      <div class="container">
+        <article class="post-content">
+          <h1>Hello, world</h1>
+          <p class="post-meta">September 2026</p>
+
+          <!-- TODO: this is a placeholder post — rewrite or replace it whenever you're ready -->
+          <p>
+            This site used to be a stock template with lorem ipsum in it. Now it's a real
+            personal site: an about section, a running list of projects, a resume, and this —
+            a place to write things down.
+          </p>
+          <p>
+            To publish a new post: copy this file, change the title/date/content, and add a
+            matching entry to the list on the <a href="/blog/">blog index</a>.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Ben Parrack.</p>
+      <div class="footer-links">
+        <a href="https://github.com/benparrack" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:benparrack@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

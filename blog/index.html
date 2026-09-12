@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ben Parrack</title>
-  <meta name="description" content="Ben Parrack — projects, resume, and writing.">
+  <title>Blog — Ben Parrack</title>
+  <meta name="description" content="Writing by Ben Parrack.">
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,10 +17,10 @@
     <div class="container header-inner">
       <a class="logo" href="/">Ben<span class="accent">.</span>Parrack</a>
       <nav class="nav" id="nav">
-        <a href="/" class="is-active">Home</a>
+        <a href="/">Home</a>
         <a href="/projects/">Projects</a>
         <a href="/resume/">Resume</a>
-        <a href="/blog/">Blog</a>
+        <a href="/blog/" class="is-active">Blog</a>
       </nav>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -29,43 +29,25 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-glow" aria-hidden="true"></div>
+    <section class="page-header reveal">
       <div class="container">
-        <p class="eyebrow">// hello world</p>
-        <h1>Hi, I'm <span class="accent">Ben Parrack</span>.</h1>
-        <!-- TODO: swap this for your real intro -->
-        <p class="lede">
-          I build things and figure out how they work. This is where I keep my projects,
-          my resume, and the occasional bit of writing.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="/projects/">View projects</a>
-          <a class="btn btn-ghost" href="/resume/">See resume</a>
-        </div>
+        <p class="eyebrow">// 01 — blog</p>
+        <h1>Writing</h1>
+        <p class="lede">Notes on projects, things I'm learning, and whatever else is worth writing down.</p>
       </div>
     </section>
 
     <section class="section reveal">
       <div class="container">
-        <p class="eyebrow">// 01 — about</p>
-        <h2>A bit about me</h2>
-        <!-- TODO: replace with your real bio -->
-        <p class="body-text">
-          This is the spot for two or three sentences about who you are, what you work on day
-          to day, and what you're into outside of it. Tell me the details and I'll drop them in.
-        </p>
-      </div>
-    </section>
-
-    <section class="section reveal">
-      <div class="container">
-        <p class="eyebrow">// 02 — elsewhere</p>
-        <h2>Find me around</h2>
-        <div class="link-row">
-          <a href="https://github.com/benparrack" target="_blank" rel="noopener">GitHub</a>
-          <a href="mailto:benparrack@gmail.com">Email</a>
-          <!-- TODO: add LinkedIn / X / other profiles if you want them here -->
+        <div class="post-list">
+          <a class="post-item" href="/blog/hello-world.html">
+            <div class="post-item-main">
+              <div class="post-title">Hello, world</div>
+              <div class="post-excerpt">First post — why this site exists and what's coming next.</div>
+            </div>
+            <span class="post-date">Sep 2026</span>
+          </a>
+          <!-- TODO: add a new .post-item block each time you publish a post -->
         </div>
       </div>
     </section>

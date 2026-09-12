@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume — Ben Parrack</title>
+  <meta name="description" content="Ben Parrack's resume and experience.">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/">Ben<span class="accent">.</span>Parrack</a>
+      <nav class="nav" id="nav">
+        <a href="/">Home</a>
+        <a href="/projects/">Projects</a>
+        <a href="/resume/" class="is-active">Resume</a>
+        <a href="/blog/">Blog</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header reveal">
+      <div class="container">
+        <p class="eyebrow">// 01 — resume</p>
+        <h1>Experience</h1>
+        <p class="lede">
+          <!-- TODO: once you have a PDF, swap this for a "Download PDF" button -->
+          A quick rundown of where I've worked and what I've done.
+        </p>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container">
+        <!-- TODO: replace with your real work history, most recent first -->
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-date">2024 — Present</span>
+            <h3>Job Title</h3>
+            <p class="role-meta">Company Name · Location</p>
+            <p>One or two lines on what you did and the impact it had.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">2022 — 2024</span>
+            <h3>Job Title</h3>
+            <p class="role-meta">Company Name · Location</p>
+            <p>One or two lines on what you did and the impact it had.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">2018 — 2022</span>
+            <h3>Degree / Program</h3>
+            <p class="role-meta">School Name · Location</p>
+            <p>Notable coursework, honors, or activities worth mentioning.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container">
+        <p class="eyebrow">// 02 — skills</p>
+        <h2>Tools &amp; technologies</h2>
+        <!-- TODO: swap in your real skill set -->
+        <div class="skills-row">
+          <span class="tag">Python</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Git</span>
+          <span class="tag">Linux</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Ben Parrack.</p>
+      <div class="footer-links">
+        <a href="https://github.com/benparrack" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:benparrack@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
