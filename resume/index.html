@@ -4,25 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume — Ben Parrack</title>
-  <meta name="description" content="Ben Parrack's resume and experience.">
+  <meta name="description" content="Resume of Ben Parrack: computer science at Virginia Tech, automation intern at GrayMatter Systems, machine learning projects.">
+  <meta name="color-scheme" content="light dark">
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="/">Ben<span class="accent">.</span>Parrack</a>
+      <a class="logo" href="/"><span class="logo-mark" aria-hidden="true">B</span>Ben Parrack</a>
       <nav class="nav" id="nav">
-        <a href="/">Home</a>
         <a href="/projects/">Projects</a>
-        <a href="/resume/" class="is-active">Resume</a>
+        <a href="/resume/" class="is-active" aria-current="page">Resume</a>
         <a href="/blog/">Blog</a>
+        <a href="mailto:benparrack@gmail.com" class="nav-cta">Get in touch</a>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -31,149 +32,181 @@
   <main>
     <section class="page-header reveal">
       <div class="container">
-        <p class="eyebrow">// 01 — resume</p>
-        <h1>Resume</h1>
-        <p class="lede">Computer science student, automation intern, and curious.</p>
+        <p class="eyebrow">Resume</p>
+        <h1>Experience &amp; <span class="serif">education.</span></h1>
+        <p class="lede">Computer science at Virginia Tech, hands-on industrial automation, and machine learning projects that run in real time.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="/resume/resume.pdf" target="_blank" rel="noopener">Download PDF</a>
+          <a class="btn btn-primary" href="/resume/resume.pdf" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
+            Download PDF
+          </a>
           <a class="btn btn-ghost" href="https://github.com/benparrack" target="_blank" rel="noopener">GitHub</a>
           <a class="btn btn-ghost" href="https://www.linkedin.com/in/benparrack/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>
     </section>
 
-    <section class="section reveal">
+    <section class="resume-section reveal">
       <div class="container">
-        <p class="eyebrow">// 02 — education</p>
-        <h2>Education</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <span class="timeline-date">Fall 2026</span>
-            <h3>Study Abroad — DIS Stockholm</h3>
-            <p class="role-meta">Stockholm, Sweden</p>
-            <p>
-              A semester focused on AI: Machine Learning as the core course, with electives in AI,
-              Data Analytics and Visualization, and App Development.
-            </p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-date">Expected May 2028</span>
-            <h3>Virginia Tech</h3>
-            <p class="role-meta">Blacksburg, VA · B.S. in Computer Science · GPA 3.5/4.0</p>
-            <p>
-              Major in Data-Centric Computing, minors in Math and Biomedical Engineering. Dean's List every
-              semester. Coursework: Data Structures and Algorithms, Computer Organization, Data Analytics and
-              Visualization, Applied Combinatorics, Discrete Mathematics, Linear Algebra.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section reveal">
-      <div class="container">
-        <p class="eyebrow">// 03 — experience</p>
         <h2>Experience</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <span class="timeline-date">May 2026 — August 2026</span>
-            <h3>Automation Intern</h3>
-            <p class="role-meta">GrayMatter Systems · Ashland, VA</p>
-            <p>
-              Installed and rewired PLCs on-site and updated the installed Ladder Logic program.
-              Configured PLC network settings via Rockwell software for SCADA communication. Designed and
-              implemented a flexible, M365-compatible inventory management system for the warehouse.
-            </p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-date">Sept 2025</span>
-            <h3>GenAI and AWS Bedrock Training and Jam</h3>
-            <p class="role-meta">Blacksburg, VA</p>
-            <p>
-              Completed AWS training and a hands-on Jam covering Amazon Bedrock, SageMaker, and related GenAI
-              services (certified for both). Built a working understanding of prompt engineering and
-              responsible AI principles.
-            </p>
+        <div class="rows">
+          <div class="row">
+            <div class="row-date">May – Aug 2026</div>
+            <div>
+              <h3>Automation Intern</h3>
+              <p class="row-org">GrayMatter Systems<span class="sep">·</span>Ashland, VA</p>
+              <ul class="bullets">
+                <li>Installed PLCs at <strong>50+ sites</strong>, rewired them inside the panels, and updated the Ladder Logic programs</li>
+                <li>Configured PLC network settings via Rockwell software, allowing communication with SCADA systems</li>
+                <li>Began billable client work within <strong>2 weeks</strong> of starting site work</li>
+                <li>Designed and implemented an inventory management system for the warehouse to spec: flexible, easily updatable, and M365-compatible</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section reveal">
+    <section class="resume-section reveal">
       <div class="container">
-        <p class="eyebrow">// 04 — projects</p>
+        <h2>Education</h2>
+        <div class="rows">
+          <div class="row">
+            <div class="row-date">Expected May 2028</div>
+            <div>
+              <h3>Virginia Tech</h3>
+              <p class="row-org">B.S. Computer Science<span class="sep">·</span>GPA 3.5 / 4.0<span class="sep">·</span>Blacksburg, VA</p>
+              <ul class="bullets">
+                <li>Major in Data-Centric Computing; minors in Mathematics, Artificial Intelligence, and Biomedical Engineering</li>
+                <li>Coursework: Machine Learning, Artificial Intelligence, Data Structures and Algorithms, Computer Organization, Data Analytics and Visualization, Applied Combinatorics, Linear Algebra</li>
+                <li>Honors: <strong>Dean's List every semester</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row-date">Fall 2026</div>
+            <div>
+              <h3>DIS Stockholm, Study Abroad</h3>
+              <p class="row-org">Stockholm, Sweden</p>
+              <p>A semester focused on AI: Machine Learning as the core course, with electives in AI, Data Analytics and Visualization, and App Development.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="resume-section reveal">
+      <div class="container">
         <h2>Projects</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <span class="timeline-date">Aug — Dec 2025</span>
-            <h3>Hydroponics Design Team — Electronics Lead</h3>
-            <p class="role-meta">IDPro@VT (Interdisciplinary Project)</p>
-            <p>
-              Built a hydroponics control system integrating Arduino-based sensor monitoring and pump control
-              to regulate nutrient delivery. Configured pH and TDS probes to output human-readable values in
-              Arduino IDE. Presented the project to 50+ people.
-            </p>
+        <div class="rows">
+          <div class="row">
+            <div class="row-date">Aug 2026 – Present</div>
+            <div>
+              <h3>Live ASL Recognition</h3>
+              <p class="row-org">Personal project<span class="sep">·</span><a href="https://github.com/benparrack/asl-recognition" target="_blank" rel="noopener">GitHub</a></p>
+              <ul class="bullets">
+                <li>Built a program that translates American Sign Language via webcam in real time with MediaPipe and OpenCV</li>
+                <li>Trained 4 different models on an ASL alphabet dataset; a hand-landmark MLP was the most accurate</li>
+                <li>Added multiple word datasets and reached <strong>93% accuracy on ~250 words</strong></li>
+              </ul>
+            </div>
           </div>
-          <div class="timeline-item">
-            <span class="timeline-date">Sept 2025</span>
-            <h3>VT Gym Occupancy Graph Program</h3>
-            <p class="role-meta">Personal Project</p>
-            <p>
-              Python web scraper that pulled gym occupancy data every 5 minutes to help students time their
-              visits. Cached and accumulated data with pickle, visualized trends with matplotlib.
-            </p>
+          <div class="row">
+            <div class="row-date">Jan – May 2026</div>
+            <div>
+              <h3>LLM-Assisted Evaluation of Classroom Layouts and Movement Behaviors</h3>
+              <p class="row-org">Research</p>
+              <ul class="bullets">
+                <li>Reviewed minute-long segments of structured learning-environment videos and compared LLM findings to the actual scenarios, identifying key differences to improve the model's behavior</li>
+                <li>Used that analysis to refine prompts for classifying behaviors and postures, with the end goal of improving student attentiveness</li>
+              </ul>
+            </div>
           </div>
-          <div class="timeline-item">
-            <span class="timeline-date">Jan — May 2026</span>
-            <h3>LLM-Assisted Evaluation of Classroom Layouts and Movement Behaviors</h3>
-            <p class="role-meta">Research</p>
-            <p>
-              Reviewed structured learning environment videos and compared LLM findings against actual
-              scenarios to surface key differences. Findings informed prompt refinement for classifying
-              behaviors and postures, aimed at improving student attentiveness.
-            </p>
+          <div class="row">
+            <div class="row-date">Aug – Dec 2025</div>
+            <div>
+              <h3>Hydroponics Design Team, Electronics Lead</h3>
+              <p class="row-org">IDPro@VT (Interdisciplinary Project)</p>
+              <ul class="bullets">
+                <li>Developed a hydroponics control system integrating Arduino-based sensor monitoring and pump control to regulate nutrient delivery</li>
+                <li>Configured pH sensors and TDS probes to output quantitative values in Arduino IDE</li>
+                <li>Created a project poster and presented with teammates to 50+ people</li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section reveal">
-      <div class="container">
-        <p class="eyebrow">// 05 — volunteer</p>
-        <h2>Volunteer experience</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <span class="timeline-date">Aug 2025 — Present</span>
-            <h3>Executive Board Member</h3>
-            <p class="role-meta">CS² (Computer Science Community Service) · Blacksburg, VA</p>
-            <p>
-              Led a 6-week program teaching 8 middle schoolers to build a programmable remote-controlled car
-              with Arduino. Tutored 10 elementary students weekly on Scratch. Designed and taught a curriculum
-              on CAD design and 3D printing for middle schoolers.
-            </p>
+          <div class="row">
+            <div class="row-date">Sep 2025</div>
+            <div>
+              <h3>VT Gym Occupancy Graph Program</h3>
+              <p class="row-org">Personal project</p>
+              <ul class="bullets">
+                <li>Built a Python web scraper that pulled gym occupancy data every 5 minutes and visualized trends with matplotlib to help students time their gym visits</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section reveal">
+    <section class="resume-section reveal">
       <div class="container">
-        <p class="eyebrow">// 06 — skills</p>
-        <h2>Tools &amp; technologies</h2>
-        <div class="skills-row">
-          <span class="tag">Java</span>
-          <span class="tag">Python</span>
-          <span class="tag">C</span>
-          <span class="tag">Bash</span>
-          <span class="tag">Ladder Logic</span>
-          <span class="tag">Git</span>
-          <span class="tag">Linux</span>
-          <span class="tag">VMware Workstation</span>
-          <span class="tag">RSLogix</span>
-          <span class="tag">MATLAB</span>
-          <span class="tag">Arduino</span>
-          <span class="tag">matplotlib</span>
-          <span class="tag">SOLIDWORKS</span>
+        <h2>Leadership &amp; volunteering</h2>
+        <div class="rows">
+          <div class="row">
+            <div class="row-date">Aug 2025 – Present</div>
+            <div>
+              <h3>Executive Board Member</h3>
+              <p class="row-org">CS² (Computer Science Community Service)<span class="sep">·</span>Blacksburg, VA</p>
+              <ul class="bullets">
+                <li>Led a 6-week program teaching 8 middle schoolers to use Arduinos by building a programmable remote-controlled car</li>
+                <li>Designed curriculum and taught middle schoolers to design objects in CAD and 3D print them</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="resume-section reveal">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skill-groups">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">Java</span>
+              <span class="tag">C</span>
+              <span class="tag">Bash</span>
+              <span class="tag">Ladder Logic</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>ML &amp; data</h3>
+            <div class="tag-row">
+              <span class="tag">PyTorch</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">MediaPipe</span>
+              <span class="tag">MATLAB</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Tools &amp; hardware</h3>
+            <div class="tag-row">
+              <span class="tag">Git</span>
+              <span class="tag">Linux</span>
+              <span class="tag">VMware</span>
+              <span class="tag">RSLogix</span>
+              <span class="tag">Arduino</span>
+              <span class="tag">SOLIDWORKS</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Certifications</h3>
+            <div class="tag-row">
+              <span class="tag">AWS GenAI Training &amp; Jam: Amazon Bedrock and SageMaker (Sep 2025)</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -181,7 +214,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> Ben Parrack.</p>
+      <p>&copy; <span id="year"></span> Ben Parrack</p>
       <div class="footer-links">
         <a href="https://github.com/benparrack" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/benparrack/" target="_blank" rel="noopener">LinkedIn</a>

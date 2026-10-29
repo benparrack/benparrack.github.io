@@ -3,59 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello, world — Ben Parrack</title>
-  <meta name="description" content="First post on my blog.">
+  <title>Studying Abroad — Ben Parrack</title>
+  <meta name="description" content="Why I'm spending my fall semester studying abroad in Stockholm, Sweden.">
+  <meta name="color-scheme" content="light dark">
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="/">Ben<span class="accent">.</span>Parrack</a>
+      <a class="logo" href="/"><span class="logo-mark" aria-hidden="true">B</span>Ben Parrack</a>
       <nav class="nav" id="nav">
-        <a href="/">Home</a>
         <a href="/projects/">Projects</a>
         <a href="/resume/">Resume</a>
         <a href="/blog/" class="is-active">Blog</a>
+        <a href="mailto:benparrack@gmail.com" class="nav-cta">Get in touch</a>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
   <main>
-    <section class="section reveal" style="padding-top: 100px;">
-      <div class="container">
-        <article class="post-content">
-          <h1>Studying Abroad</h1>
-          <p class="post-meta">September 2026</p>
+    <section class="container post reveal">
+      <article class="post-content">
+        <a class="back-link" href="/blog/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+          All posts
+        </a>
+        <h1>Studying Abroad</h1>
+        <p class="post-meta">September 2026 · Stockholm, Sweden</p>
 
-          <p>
-	    Hello! My name is Ben Parrack, and I'm currently a junior studying computer science. My home school is Virginia Tech, 
-	    but for this current Fall semester, im busy studying abroad in Stockholm, Sweden! Throughout college, my parents were 
-	    always urging me to go abroad, especially my dad. He always told me the story of how he backpacked across Europe as 
- 	    soon as he finished college, and he had a such a good time that he wanted me to have a similiar experience. Most importantly, 
-	    he always told me, <q>You'll have all the time in the world to work, so go out and do everything when you have the chance</q>. 
-	    Or something similiar, but that's the gist of it. I really take this to heart because of how true it is, I really do have the rest
-	    of my life to work, and it's most likely what is going to take up the majority of the next 40 years of my life, if I'm lucky. As people,  
-	    we really do need to take a step back sometimes and just take it all in, which is what I'm trying to do by spending my fall semester in 
-	    Stockholm. It has been such an amazing opportunity to reconnect with nature, meet some amazing new people, and get a different 
-	    perspective on so many different parts of life. I'm so grateful for my family which has put me in a position to be able to partake in 
-	    amazing adventures such as this one, and I look forward to the future and hope I can continue making great memories. - Ben
-          </p>
-        </article>
-      </div>
+        <p>
+          Hello! My name is Ben Parrack, and I'm currently a junior studying computer science. My home school is Virginia Tech,
+          but for this current Fall semester, I'm busy studying abroad in Stockholm, Sweden!
+        </p>
+        <p>
+          Throughout college, my parents were always urging me to go abroad, especially my dad. He always told me the story of
+          how he backpacked across Europe as soon as he finished college, and he had such a good time that he wanted me to have
+          a similar experience. Most importantly, he always told me, <q>You'll have all the time in the world to work, so go out
+          and do everything when you have the chance</q>. Or something similar, but that's the gist of it.
+        </p>
+        <p>
+          I really take this to heart because of how true it is. I really do have the rest of my life to work, and it's most
+          likely what is going to take up the majority of the next 40 years of my life, if I'm lucky. As people, we really do
+          need to take a step back sometimes and just take it all in, which is what I'm trying to do by spending my fall
+          semester in Stockholm.
+        </p>
+        <p>
+          It has been such an amazing opportunity to reconnect with nature, meet some amazing new people, and get a different
+          perspective on so many different parts of life. I'm so grateful for my family, who have put me in a position to be
+          able to partake in amazing adventures such as this one, and I look forward to the future and hope I can continue
+          making great memories.
+        </p>
+        <p>– Ben</p>
+      </article>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> Ben Parrack.</p>
+      <p>&copy; <span id="year"></span> Ben Parrack</p>
       <div class="footer-links">
         <a href="https://github.com/benparrack" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/benparrack/" target="_blank" rel="noopener">LinkedIn</a>
